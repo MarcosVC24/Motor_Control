@@ -1,0 +1,1381 @@
+[0;32mI (119) esp_image: segment 1: paddr=0001dccc vaddr=3fc920ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378392
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 22 2024 16:25:09[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0dca4h ( 56484) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001dccc vaddr=3fc92000 size=0234ch (  9036) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a7dch (108508) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=0003a804 vaddr=3fc9434c size=00584h (  1412) load[0m
+[0;32mI (152) esp_image: segment 4: paddr=0003ad90 vaddr=40374000 size=0dfe4h ( 57316) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     motor_control_perron[0m
+[0;32mI (208) cpu_start: App version:      1[0m
+[0;32mI (213) cpu_start: Compile time:     May 22 2024 16:24:29[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  70c7cca89...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (229) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (234) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (239) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FC951A8 len 00054568 (337 KiB): RAM[0m
+[0;32mI (257) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (276) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (286) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (291) spi_flash: flash io: opi_str[0m
+[0;33mW (295) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (308) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (315) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (322) main_task: Started on CPU0[0m
+[0;32mI (332) main_task: Calling app_main()[0m
+[0;32mI (332) example: Se va a iniciar la tarea[0m
+[0;32mI (332) example: install pcnt unit[0m
+[0;32mI (342) example: set glitch filter[0m
+[0;32mI (342) example: install pcnt channels[0m
+[0;32mI (352) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (352) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (372) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (382) example: set edge and level actions for pcnt channels[0m
+[0;32mI (392) example: enable pcnt unit[0m
+[0;32mI (392) example: clear pcnt unit[0m
+[0;32mI (402) example: start pcnt unit[0m
+[0;32mI (402) example: Stack High Water Mark: 788 palabras[0m
+[0;32mI (412) example: Se Generó la tarea ALABESTIA[0m
+[0;32mI (1412) example: Pulse count: 0[0m
+[0;32mI (1412) example: Pulses per second: 0[0m
+[0;32mI (1412) example: RPM: 0[0m
+[0;32mI (1412) example: RMP_CONV: 0[0m
+[0;32mI (2412) example: Pulse count: 0[0m
+[0;32mI (2412) example: Pulses per second: 0[0m
+[0;32mI (2412) example: RPM: 0[0m
+[0;32mI (2412) example: RMP_CONV: 0[0m
+[0;32mI (3412) example: Pulse count: 0[0m
+[0;32mI (3412) example: Pulses per second: 0[0m
+[0;32mI (3412) example: RPM: 0[0m
+[0;32mI (3412) example: RMP_CONV: 0[0m
+[0;32mI (4412) example: Pulse count: -1899[0m
+[0;32mI (4412) example: Pulses per second: -1899[0m
+[0;32mI (4412) example: RPM: -4020[0m
+[0;32mI (4412) example: RMP_CONV: -10[0m
+[0;32mI (5412) example: Pulse count: -9424[0m
+[0;32mI (5412) example: Pulses per second: -7525[0m
+[0;32mI (5412) example: RPM: -16080[0m
+[0;32mI (5412) example: RMP_CONV: -42[0m
+[0;32mI (6412) example: Pulse count: -16950[0m
+[0;32mI (6412) example: Pulses per second: -7526[0m
+[0;32mI (6412) example: RPM: -16080[0m
+[0;32mI (6412) example: RMP_CONV: -42[0m
+[0;32mI (7412) example: Pulse count: -24468[0m
+[0;32mI (7412) example: Pulses per second: -7518[0m
+[0;32mI (7412) example: RPM: -16080[0m
+[0;32mI (7412) example: RMP_CONV: -42[0m
+[0;32mI (8412) example: Pulse count: -32007[0m
+[0;32mI (8412) example: Pulses per second: -7539[0m
+[0;32mI (8412) example: RPM: -16140[0m
+[0;32mI (8412) example: RMP_CONV: -42[0m
+[0;32mI (9412) example: Pulse count: -39566[0m
+[0;32mI (9412) example: Pulses per second: -7559[0m
+[0;32mI (9412) example: RPM: -16140[0m
+[0;32mI (9412) example: RMP_CONV: -42[0m
+[0;32mI (10412) example: Pulse count: -47134[0m
+[0;32mI (10412) example: Pulses per second: -7568[0m
+[0;32mI (10412) example: RPM: -16200[0m
+[0;32mI (10412) example: RMP_CONV: -42[0m
+[0;32mI (11412) example: Pulse count: -54679[0m
+[0;32mI (11412) example: Pulses per second: -7545[0m
+[0;32mI (11412) example: RPM: -16140[0m
+[0;32mI (11412) example: RMP_CONV: -42[0m
+[0;32mI (12412) example: Pulse count: -62219[0m
+[0;32mI (12412) example: Pulses per second: -7540[0m
+[0;32mI (12412) example: RPM: -16140[0m
+[0;32mI (12412) example: RMP_CONV: -42[0m
+[0;32mI (13412) example: Pulse count: -69765[0m
+[0;32mI (13412) example: Pulses per second: -7546[0m
+[0;32mI (13412) example: RPM: -16140[0m
+[0;32mI (13412) example: RMP_CONV: -42[0m
+[0;32mI (14412) example: Pulse count: -77315[0m
+[0;32mI (14412) example: Pulses per second: -7550[0m
+[0;32mI (14412) example: RPM: -16140[0m
+[0;32mI (14412) example: RMP_CONV: -42[0m
+[0;32mI (15412) example: Pulse count: -84907[0m
+[0;32mI (15412) example: Pulses per second: -7592[0m
+[0;32mI (15412) example: RPM: -16260[0m
+[0;32mI (15412) example: RMP_CONV: -42[0m
+[0;32mI (16412) example: Pulse count: -92470[0m
+[0;32mI (16412) example: Pulses per second: -7563[0m
+[0;32mI (16412) example: RPM: -16200[0m
+[0;32mI (16412) example: RMP_CONV: -42[0m
+[0;32mI (17412) example: Pulse count: -100015[0m
+[0;32mI (17412) example: Pulses per second: -7545[0m
+[0;32mI (17412) example: RPM: -16140[0m
+[0;32mI (17412) example: RMP_CONV: -42[0m
+[0;32mI (18412) example: Pulse count: -107552[0m
+[0;32mI (18412) example: Pulses per second: -7537[0m
+[0;32mI (18412) example: RPM: -16140[0m
+[0;32mI (18412) example: RMP_CONV: -42[0m
+[0;32mI (19412) example: Pulse count: -115113[0m
+[0;32mI (19412) example: Pulses per second: -7561[0m
+[0;32mI (19412) example: RPM: -16200[0m
+[0;32mI (19412) example: RMP_CONV: -42[0m
+[0;32mI (20412) example: Pulse count: -122691[0m
+[0;32mI (20412) example: Pulses per second: -7578[0m
+[0;32mI (20412) example: RPM: -16200[0m
+[0;32mI (20412) example: RMP_CONV: -42[0m
+[0;32mI (21412) example: Pulse count: -130245[0m
+[0;32mI (21412) example: Pulses per second: -7554[0m
+[0;32mI (21412) example: RPM: -16140[0m
+[0;32mI (21412) example: RMP_CONV: -42[0m
+[0;32mI (22412) example: Pulse count: -137771[0m
+[0;32mI (22412) example: Pulses per second: -7526[0m
+[0;32mI (22412) example: RPM: -16080[0m
+[0;32mI (22412) example: RMP_CONV: -42[0m
+[0;32mI (23412) example: Pulse count: -145280[0m
+[0;32mI (23412) example: Pulses per second: -7509[0m
+[0;32mI (23412) example: RPM: -16080[0m
+[0;32mI (23412) example: RMP_CONV: -42[0m
+[0;32mI (24412) example: Pulse count: -152689[0m
+[0;32mI (24412) example: Pulses per second: -7409[0m
+[0;32mI (24412) example: RPM: -15840[0m
+[0;32mI (24412) example: RMP_CONV: -41[0m
+[0;32mI (25412) example: Pulse count: -153673[0m
+[0;32mI (25412) example: Pulses per second: -984[0m
+[0;32mI (25412) example: RPM: -2100[0m
+[0;32mI (25412) example: RMP_CONV: -5[0m
+[0;32mI (26412) example: Pulse count: -153673[0m
+[0;32mI (26412) example: Pulses per second: 0[0m
+[0;32mI (26412) example: RPM: 0[0m
+[0;32mI (26412) example: RMP_CONV: 0[0m
+[0;32mI (27412) example: Pulse count: -153673[0m
+[0;32mI (27412) example: Pulses per second: 0[0m
+[0;32mI (27412) example: RPM: 0[0m
+[0;32mI (27412) example: RMP_CONV: 0[0m
+[0;32mI (28412) example: Pulse count: -153673[0m
+[0;32mI (28412) example: Pulses per second: 0[0m
+[0;32mI (28412) example: RPM: 0[0m
+[0;32mI (28412) example: RMP_CONV: 0[0m
+[0;32mI (29412) example: Pulse count: -151922[0m
+[0;32mI (29412) example: Pulses per second: 1751[0m
+[0;32mI (29412) example: RPM: 3720[0m
+[0;32mI (29412) example: RMP_CONV: 9[0m
+[0;32mI (30412) example: Pulse count: -144390[0m
+[0;32mI (30412) example: Pulses per second: 7532[0m
+[0;32mI (30412) example: RPM: 16140[0m
+[0;32mI (30412) example: RMP_CONV: 42[0m
+[0;32mI (31412) example: Pulse count: -136884[0m
+[0;32mI (31412) example: Pulses per second: 7506[0m
+[0;32mI (31412) example: RPM: 16080[0m
+[0;32mI (31412) example: RMP_CONV: 42[0m
+[0;32mI (32412) example: Pulse count: -129374[0m
+[0;32mI (32412) example: Pulses per second: 7510[0m
+[0;32mI (32412) example: RPM: 16080[0m
+[0;32mI (32412) example: RMP_CONV: 42[0m
+[0;32mI (33412) example: Pulse count: -121852[0m
+[0;32mI (33412) example: Pulses per second: 7522[0m
+[0;32mI (33412) example: RPM: 16080[0m
+[0;32mI (33412) example: RMP_CONV: 42[0m
+[0;32mI (34412) example: Pulse count: -114336[0m
+[0;32mI (34412) example: Pulses per second: 7516[0m
+[0;32mI (34412) example: RPM: 16080[0m
+[0;32mI (34412) example: RMP_CONV: 42[0m
+[0;32mI (35412) example: Pulse count: -106817[0m
+[0;32mI (35412) example: Pulses per second: 7519[0m
+[0;32mI (35412) example: RPM: 16080[0m
+[0;32mI (35412) example: RMP_CONV: 42[0m
+[0;32mI (36412) example: Pulse count: -99297[0m
+[0;32mI (36412) example: Pulses per second: 7520[0m
+[0;32mI (36412) example: RPM: 16080[0m
+[0;32mI (36412) example: RMP_CONV: 42[0m
+[0;32mI (37412) example: Pulse count: -91777[0m
+[0;32mI (37412) example: Pulses per second: 7520[0m
+[0;32mI (37412) example: RPM: 16080[0m
+[0;32mI (37412) example: RMP_CONV: 42[0m
+[0;32mI (38412) example: Pulse count: -84249[0m
+[0;32mI (38412) example: Pulses per second: 7528[0m
+[0;32mI (38412) example: RPM: 16080[0m
+[0;32mI (38412) example: RMP_CONV: 42[0m
+[0;32mI (39412) example: Pulse count: -76727[0m
+[0;32mI (39412) example: Pulses per second: 7522[0m
+[0;32mI (39412) example: RPM: 16080[0m
+[0;32mI (39412) example: RMP_CONV: 42[0m
+[0;32mI (40412) example: Pulse count: -69207[0m
+[0;32mI (40412) example: Pulses per second: 7520[0m
+[0;32mI (40412) example: RPM: 16080[0m
+[0;32mI (40412) example: RMP_CONV: 42[0m
+[0;32mI (41412) example: Pulse count: -61648[0m
+[0;32mI (41412) example: Pulses per second: 7559[0m
+[0;32mI (41412) example: RPM: 16140[0m
+[0;32mI (41412) example: RMP_CONV: 42[0m
+[0;32mI (42412) example: Pulse count: -54104[0m
+[0;32mI (42412) example: Pulses per second: 7544[0m
+[0;32mI (42412) example: RPM: 16140[0m
+[0;32mI (42412) example: RMP_CONV: 42[0m
+[0;32mI (43412) example: Pulse count: -46534[0m
+[0;32mI (43412) example: Pulses per second: 7570[0m
+[0;32mI (43412) example: RPM: 16200[0m
+[0;32mI (43412) example: RMP_CONV: 42[0m
+[0;32mI (44412) example: Pulse count: -38958[0m
+[0;32mI (44412) example: Pulses per second: 7576[0m
+[0;32mI (44412) example: RPM: 16200[0m
+[0;32mI (44412) example: RMP_CONV: 42[0m
+[0;32mI (45412) example: Pulse count: -31374[0m
+[0;32mI (45412) example: Pulses per second: 7584[0m
+[0;32mI (45412) example: RPM: 16200[0m
+[0;32mI (45412) example: RMP_CONV: 42[0m
+[0;32mI (46412) example: Pulse count: -23794[0m
+[0;32mI (46412) example: Pulses per second: 7580[0m
+[0;32mI (46412) example: RPM: 16200[0m
+[0;32mI (46412) example: RMP_CONV: 42[0m
+[0;32mI (47412) example: Pulse count: -16200[0m
+[0;32mI (47412) example: Pulses per second: 7594[0m
+[0;32mI (47412) example: RPM: 16260[0m
+[0;32mI (47412) example: RMP_CONV: 42[0m
+[0;32mI (48412) example: Pulse count: -8622[0m
+[0;32mI (48412) example: Pulses per second: 7578[0m
+[0;32mI (48412) example: RPM: 16200[0m
+[0;32mI (48412) example: RMP_CONV: 42[0m
+[0;32mI (49412) example: Pulse count: -1030[0m
+[0;32mI (49412) example: Pulses per second: 7592[0m
+[0;32mI (49412) example: RPM: 16260[0m
+[0;32mI (49412) example: RMP_CONV: 42[0m
+[0;32mI (50412) example: Pulse count: 6546[0m
+[0;32mI (50412) example: Pulses per second: 7576[0m
+[0;32mI (50412) example: RPM: 16200[0m
+[0;32mI (50412) example: RMP_CONV: 42[0m
+[0;32mI (51412) example: Pulse count: 14113[0m
+[0;32mI (51412) example: Pulses per second: 7567[0m
+[0;32mI (51412) example: RPM: 16200[0m
+[0;32mI (51412) example: RMP_CONV: 42[0m
+[0;32mI (52412) example: Pulse count: 21689[0m
+[0;32mI (52412) example: Pulses per second: 7576[0m
+[0;32mI (52412) example: RPM: 16200[0m
+[0;32mI (52412) example: RMP_CONV: 42[0m
+[0;32mI (53412) example: Pulse count: 29296[0m
+[0;32mI (53412) example: Pulses per second: 7607[0m
+[0;32mI (53412) example: RPM: 16260[0m
+[0;32mI (53412) example: RMP_CONV: 42[0m
+[0;32mI (54412) example: Pulse count: 36928[0m
+[0;32mI (54412) example: Pulses per second: 7632[0m
+[0;32mI (54412) example: RPM: 16320[0m
+[0;32mI (54412) example: RMP_CONV: 42[0m
+[0;32mI (55412) example: Pulse count: 44527[0m
+[0;32mI (55412) example: Pulses per second: 7599[0m
+[0;32mI (55412) example: RPM: 16260[0m
+[0;32mI (55412) example: RMP_CONV: 42[0m
+[0;32mI (56412) example: Pulse count: 52102[0m
+[0;32mI (56412) example: Pulses per second: 7575[0m
+[0;32mI (56412) example: RPM: 16200[0m
+[0;32mI (56412) example: RMP_CONV: 42[0m
+[0;32mI (57412) example: Pulse count: 59670[0m
+[0;32mI (57412) example: Pulses per second: 7568[0m
+[0;32mI (57412) example: RPM: 16200[0m
+[0;32mI (57412) example: RMP_CONV: 42[0m
+[0;32mI (58412) example: Pulse count: 67232[0m
+[0;32mI (58412) example: Pulses per second: 7562[0m
+[0;32mI (58412) example: RPM: 16200[0m
+[0;32mI (58412) example: RMP_CONV: 42[0m
+[0;32mI (59412) example: Pulse count: 74788[0m
+[0;32mI (59412) example: Pulses per second: 7556[0m
+[0;32mI (59412) example: RPM: 16140[0m
+[0;32mI (59412) example: RMP_CONV: 42[0m
+[0;32mI (60412) example: Pulse count: 82339[0m
+[0;32mI (60412) example: Pulses per second: 7551[0m
+[0;32mI (60412) example: RPM: 16140[0m
+[0;32mI (60412) example: RMP_CONV: 42[0m
+[0;32mI (61412) example: Pulse count: 89883[0m
+[0;32mI (61412) example: Pulses per second: 7544[0m
+[0;32mI (61412) example: RPM: 16140[0m
+[0;32mI (61412) example: RMP_CONV: 42[0m
+[0;32mI (62412) example: Pulse count: 97426[0m
+[0;32mI (62412) example: Pulses per second: 7543[0m
+[0;32mI (62412) example: RPM: 16140[0m
+[0;32mI (62412) example: RMP_CONV: 42[0m
+[0;32mI (63412) example: Pulse count: 103130[0m
+[0;32mI (63412) example: Pulses per second: 5704[0m
+[0;32mI (63412) example: RPM: 12180[0m
+[0;32mI (63412) example: RMP_CONV: 32[0m
+[0;32mI (64412) example: Pulse count: 103166[0m
+[0;32mI (64412) example: Pulses per second: 36[0m
+[0;32mI (64412) example: RPM: 60[0m
+[0;32mI (64412) example: RMP_CONV: 0[0m
+[0;32mI (65412) example: Pulse count: 103166[0m
+[0;32mI (65412) example: Pulses per second: 0[0m
+[0;32mI (65412) example: RPM: 0[0m
+[0;32mI (65412) example: RMP_CONV: 0[0m
+[0;32mI (66412) example: Pulse count: 103166[0m
+[0;32mI (66412) example: Pulses per second: 0[0m
+[0;32mI (66412) example: RPM: 0[0m
+[0;32mI (66412) example: RMP_CONV: 0[0m
+[0;32mI (67412) example: Pulse count: 103166[0m
+[0;32mI (67412) example: Pulses per second: 0[0m
+[0;32mI (67412) example: RPM: 0[0m
+[0;32mI (67412) example: RMP_CONV: 0[0m
+[0;32mI (68412) example: Pulse count: 103166[0m
+[0;32mI (68412) example: Pulses per second: 0[0m
+[0;32mI (68412) example: RPM: 0[0m
+[0;32mI (68412) example: RMP_CONV: 0[0m
+[0;32mI (69412) example: Pulse count: 108651[0m
+[0;32mI (69412) example: Pulses per second: 5485[0m
+[0;32mI (69412) example: RPM: 11700[0m
+[0;32mI (69412) example: RMP_CONV: 30[0m
+[0;32mI (70412) example: Pulse count: 116207[0m
+[0;32mI (70412) example: Pulses per second: 7556[0m
+[0;32mI (70412) example: RPM: 16140[0m
+[0;32mI (70412) example: RMP_CONV: 42[0m
+[0;32mI (71412) example: Pulse count: 123742[0m
+[0;32mI (71412) example: Pulses per second: 7535[0m
+[0;32mI (71412) example: RPM: 16140[0m
+[0;32mI (71412) example: RMP_CONV: 42[0m
+[0;32mI (72412) example: Pulse count: 131281[0m
+[0;32mI (72412) example: Pulses per second: 7539[0m
+[0;32mI (72412) example: RPM: 16140[0m
+[0;32mI (72412) example: RMP_CONV: 42[0m
+[0;32mI (73412) example: Pulse count: 138833[0m
+[0;32mI (73412) example: Pulses per second: 7552[0m
+[0;32mI (73412) example: RPM: 16140[0m
+[0;32mI (73412) example: RMP_CONV: 42[0m
+[0;32mI (74412) example: Pulse count: 146367[0m
+[0;32mI (74412) example: Pulses per second: 7534[0m
+[0;32mI (74412) example: RPM: 16140[0m
+[0;32mI (74412) example: RMP_CONV: 42[0m
+[0;32mI (75412) example: Pulse count: 153871[0m
+[0;32mI (75412) example: Pulses per second: 7504[0m
+[0;32mI (75412) example: RPM: 16080[0m
+[0;32mI (75412) example: RMP_CONV: 42[0m
+[0;32mI (76412) example: Pulse count: 161424[0m
+[0;32mI (76412) example: Pulses per second: 7553[0m
+[0;32mI (76412) example: RPM: 16140[0m
+[0;32mI (76412) example: RMP_CONV: 42[0m
+[0;32mI (77412) example: Pulse count: 168983[0m
+[0;32mI (77412) example: Pulses per second: 7559[0m
+[0;32mI (77412) example: RPM: 16140[0m
+[0;32mI (77412) example: RMP_CONV: 42[0m
+[0;32mI (78412) example: Pulse count: 176534[0m
+[0;32mI (78412) example: Pulses per second: 7551[0m
+[0;32mI (78412) example: RPM: 16140[0m
+[0;32mI (78412) example: RMP_CONV: 42[0m
+[0;32mI (79412) example: Pulse count: 184102[0m
+[0;32mI (79412) example: Pulses per second: 7568[0m
+[0;32mI (79412) example: RPM: 16200[0m
+[0;32mI (79412) example: RMP_CONV: 42[0m
+[0;32mI (80412) example: Pulse count: 190270[0m
+[0;32mI (80412) example: Pulses per second: 6168[0m
+[0;32mI (80412) example: RPM: 13200[0m
+[0;32mI (80412) example: RMP_CONV: 34[0m
+[0;32mI (81412) example: Pulse count: 190394[0m
+[0;32mI (81412) example: Pulses per second: 124[0m
+[0;32mI (81412) example: RPM: 240[0m
+[0;32mI (81412) example: RMP_CONV: 0[0m
+[0;32mI (82412) example: Pulse count: 190394[0m
+[0;32mI (82412) example: Pulses per second: 0[0m
+[0;32mI (82412) example: RPM: 0[0m
+[0;32mI (82412) example: RMP_CONV: 0[0m
+[0;32mI (83412) example: Pulse count: 190394[0m
+[0;32mI (83412) example: Pulses per second: 0[0m
+[0;32mI (83412) example: RPM: 0[0m
+[0;32mI (83412) example: RMP_CONV: 0[0m
+[0;32mI (84412) example: Pulse count: 190394[0m
+[0;32mI (84412) example: Pulses per second: 0[0m
+[0;32mI (84412) example: RPM: 0[0m
+[0;32mI (84412) example: RMP_CONV: 0[0m
+[0;32mI (85412) example: Pulse count: 190394[0m
+[0;32mI (85412) example: Pulses per second: 0[0m
+[0;32mI (85412) example: RPM: 0[0m
+[0;32mI (85412) example: RMP_CONV: 0[0m
+[0;32mI (86412) example: Pulse count: 190394[0m
+[0;32mI (86412) example: Pulses per second: 0[0m
+[0;32mI (86412) example: RPM: 0[0m
+[0;32mI (86412) example: RMP_CONV: 0[0m
+[0;32mI (87412) example: Pulse count: 190394[0m
+[0;32mI (87412) example: Pulses per second: 0[0m
+[0;32mI (87412) example: RPM: 0[0m
+[0;32mI (87412) example: RMP_CONV: 0[0m
+[0;32mI (88412) example: Pulse count: 190394[0m
+[0;32mI (88412) example: Pulses per second: 0[0m
+[0;32mI (88412) example: RPM: 0[0m
+[0;32mI (88412) example: RMP_CONV: 0[0m
+[0;32mI (89412) example: Pulse count: 190394[0m
+[0;32mI (89412) example: Pulses per second: 0[0m
+[0;32mI (89412) example: RPM: 0[0m
+[0;32mI (89412) example: RMP_CONV: 0[0m
+[0;32mI (90412) example: Pulse count: 190394[0m
+[0;32mI (90412) example: Pulses per second: 0[0m
+[0;32mI (90412) example: RPM: 0[0m
+[0;32mI (90412) example: RMP_CONV: 0[0m
+[0;32mI (91412) example: Pulse count: 190394[0m
+[0;32mI (91412) example: Pulses per second: 0[0m
+[0;32mI (91412) example: RPM: 0[0m
+[0;32mI (91412) example: RMP_CONV: 0[0m
+[0;32mI (92412) example: Pulse count: 190394[0m
+[0;32mI (92412) example: Pulses per second: 0[0m
+[0;32mI (92412) example: RPM: 0[0m
+[0;32mI (92412) example: RMP_CONV: 0[0m
+[0;32mI (93412) example: Pulse count: 190394[0m
+[0;32mI (93412) example: Pulses per second: 0[0m
+[0;32mI (93412) example: RPM: 0[0m
+[0;32mI (93412) example: RMP_CONV: 0[0m
+[0;32mI (94412) example: Pulse count: 190394[0m
+[0;32mI (94412) example: Pulses per second: 0[0m
+[0;32mI (94412) example: RPM: 0[0m
+[0;32mI (94412) example: RMP_CONV: 0[0m
+[0;32mI (95412) example: Pulse count: 190394[0m
+[0;32mI (95412) example: Pulses per second: 0[0m
+[0;32mI (95412) example: RPM: 0[0m
+[0;32mI (95412) example: RMP_CONV: 0[0m
+[0;32mI (96412) example: Pulse count: 190394[0m
+[0;32mI (96412) example: Pulses per second: 0[0m
+[0;32mI (96412) example: RPM: 0[0m
+[0;32mI (96412) example: RMP_CONV: 0[0m
+[0;32mI (97412) example: Pulse count: 190394[0m
+[0;32mI (97412) example: Pulses per second: 0[0m
+[0;32mI (97412) example: RPM: 0[0m
+[0;32mI (97412) example: RMP_CONV: 0[0m
+[0;32mI (98412) example: Pulse count: 190394[0m
+[0;32mI (98412) example: Pulses per second: 0[0m
+[0;32mI (98412) example: RPM: 0[0m
+[0;32mI (98412) example: RMP_CONV: 0[0m
+[0;32mI (99412) example: Pulse count: 190394[0m
+[0;32mI (99412) example: Pulses per second: 0[0m
+[0;32mI (99412) example: RPM: 0[0m
+[0;32mI (99412) example: RMP_CONV: 0[0m
+[0;32mI (100412) example: Pulse count: 190394[0m
+[0;32mI (100412) example: Pulses per second: 0[0m
+[0;32mI (100412) example: RPM: 0[0m
+[0;32mI (100412) example: RMP_CONV: 0[0m
+[0;32mI (101412) example: Pulse count: 190394[0m
+[0;32mI (101412) example: Pulses per second: 0[0m
+[0;32mI (101412) example: RPM: 0[0m
+[0;32mI (101412) example: RMP_CONV: 0[0m
+[0;32mI (102412) example: Pulse count: 190394[0m
+[0;32mI (102412) example: Pulses per second: 0[0m
+[0;32mI (102412) example: RPM: 0[0m
+[0;32mI (102412) example: RMP_CONV: 0[0m
+[0;32mI (103412) example: Pulse count: 190394[0m
+[0;32mI (103412) example: Pulses per second: 0[0m
+[0;32mI (103412) example: RPM: 0[0m
+[0;32mI (103412) example: RMP_CONV: 0[0m
+[0;32mI (104412) example: Pulse count: 190394[0m
+[0;32mI (104412) example: Pulses per second: 0[0m
+[0;32mI (104412) example: RPM: 0[0m
+[0;32mI (104412) example: RMP_CONV: 0[0m
+[0;32mI (105412) example: Pulse count: 190394[0m
+[0;32mI (105412) example: Pulses per second: 0[0m
+[0;32mI (105412) example: RPM: 0[0m
+[0;32mI (105412) example: RMP_CONV: 0[0m
+[0;32mI (106412) example: Pulse count: 190394[0m
+[0;32mI (106412) example: Pulses per second: 0[0m
+[0;32mI (106412) example: RPM: 0[0m
+[0;32mI (106412) example: RMP_CONV: 0[0m
+[0;32mI (107412) example: Pulse count: 190394[0m
+[0;32mI (107412) example: Pulses per second: 0[0m
+[0;32mI (107412) example: RPM: 0[0m
+[0;32mI (107412) example: RMP_CONV: 0[0m
+[0;32mI (108412) example: Pulse count: 190394[0m
+[0;32mI (108412) example: Pulses per second: 0[0m
+[0;32mI (108412) example: RPM: 0[0m
+[0;32mI (108412) example: RMP_CONV: 0[0m
+[0;32mI (109412) example: Pulse count: 190394[0m
+[0;32mI (109412) example: Pulses per second: 0[0m
+[0;32mI (109412) example: RPM: 0[0m
+[0;32mI (109412) example: RMP_CONV: 0[0m
+[0;32mI (110412) example: Pulse count: 190394[0m
+[0;32mI (110412) example: Pulses per second: 0[0m
+[0;32mI (110412) example: RPM: 0[0m
+[0;32mI (110412) example: RMP_CONV: 0[0m
+[0;32mI (111412) example: Pulse count: 190394[0m
+[0;32mI (111412) example: Pulses per second: 0[0m
+[0;32mI (111412) example: RPM: 0[0m
+[0;32mI (111412) example: RMP_CONV: 0[0m
+[0;32mI (112412) example: Pulse count: 190394[0m
+[0;32mI (112412) example: Pulses per second: 0[0m
+[0;32mI (112412) example: RPM: 0[0m
+[0;32mI (112412) example: RMP_CONV: 0[0m
+[0;32mI (113412) example: Pulse count: 190394[0m
+[0;32mI (113412) example: Pulses per second: 0[0m
+[0;32mI (113412) example: RPM: 0[0m
+[0;32mI (113412) example: RMP_CONV: 0[0m
+[0;32mI (114412) example: Pulse count: 190394[0m
+[0;32mI (114412) example: Pulses per second: 0[0m
+[0;32mI (114412) example: RPM: 0[0m
+[0;32mI (114412) example: RMP_CONV: 0[0m
+[0;32mI (115412) example: Pulse count: 190394[0m
+[0;32mI (115412) example: Pulses per second: 0[0m
+[0;32mI (115412) example: RPM: 0[0m
+[0;32mI (115412) example: RMP_CONV: 0[0m
+[0;32mI (116412) example: Pulse count: 190394[0m
+[0;32mI (116412) example: Pulses per second: 0[0m
+[0;32mI (116412) example: RPM: 0[0m
+[0;32mI (116412) example: RMP_CONV: 0[0m
+[0;32mI (117412) example: Pulse count: 190394[0m
+[0;32mI (117412) example: Pulses per second: 0[0m
+[0;32mI (117412) example: RPM: 0[0m
+[0;32mI (117412) example: RMP_CONV: 0[0m
+[0;32mI (118412) example: Pulse count: 190394[0m
+[0;32mI (118412) example: Pulses per second: 0[0m
+[0;32mI (118412) example: RPM: 0[0m
+[0;32mI (118412) example: RMP_CONV: 0[0m
+[0;32mI (119412) example: Pulse count: 190394[0m
+[0;32mI (119412) example: Pulses per second: 0[0m
+[0;32mI (119412) example: RPM: 0[0m
+[0;32mI (119412) example: RMP_CONV: 0[0m
+[0;32mI (120412) example: Pulse count: 190394[0m
+[0;32mI (120412) example: Pulses per second: 0[0m
+[0;32mI (120412) example: RPM: 0[0m
+[0;32mI (120412) example: RMP_CONV: 0[0m
+[0;32mI (121412) example: Pulse count: 190394[0m
+[0;32mI (121412) example: Pulses per second: 0[0m
+[0;32mI (121412) example: RPM: 0[0m
+[0;32mI (121412) example: RMP_CONV: 0[0m
+[0;32mI (122412) example: Pulse count: 190394[0m
+[0;32mI (122412) example: Pulses per second: 0[0m
+[0;32mI (122412) example: RPM: 0[0m
+[0;32mI (122412) example: RMP_CONV: 0[0m
+[0;32mI (123412) example: Pulse count: 190394[0m
+[0;32mI (123412) example: Pulses per second: 0[0m
+[0;32mI (123412) example: RPM: 0[0m
+[0;32mI (123412) example: RMP_CONV: 0[0m
+[0;32mI (124412) example: Pulse count: 190394[0m
+[0;32mI (124412) example: Pulses per second: 0[0m
+[0;32mI (124412) example: RPM: 0[0m
+[0;32mI (124412) example: RMP_CONV: 0[0m
+[0;32mI (125412) example: Pulse count: 190394[0m
+[0;32mI (125412) example: Pulses per second: 0[0m
+[0;32mI (125412) example: RPM: 0[0m
+[0;32mI (125412) example: RMP_CONV: 0[0m
+[0;32mI (126412) example: Pulse count: 190394[0m
+[0;32mI (126412) example: Pulses per second: 0[0m
+[0;32mI (126412) example: RPM: 0[0m
+[0;32mI (126412) example: RMP_CONV: 0[0m
+[0;32mI (127412) example: Pulse count: 190394[0m
+[0;32mI (127412) example: Pulses per second: 0[0m
+[0;32mI (127412) example: RPM: 0[0m
+[0;32mI (127412) example: RMP_CONV: 0[0m
+[0;32mI (128412) example: Pulse count: 190394[0m
+[0;32mI (128412) example: Pulses per second: 0[0m
+[0;32mI (128412) example: RPM: 0[0m
+[0;32mI (128412) example: RMP_CONV: 0[0m
+[0;32mI (129412) example: Pulse count: 190394[0m
+[0;32mI (129412) example: Pulses per second: 0[0m
+[0;32mI (129412) example: RPM: 0[0m
+[0;32mI (129412) example: RMP_CONV: 0[0m
+[0;32mI (130412) example: Pulse count: 190394[0m
+[0;32mI (130412) example: Pulses per second: 0[0m
+[0;32mI (130412) example: RPM: 0[0m
+[0;32mI (130412) example: RMP_CONV: 0[0m
+[0;32mI (131412) example: Pulse count: 190394[0m
+[0;32mI (131412) example: Pulses per second: 0[0m
+[0;32mI (131412) example: RPM: 0[0m
+[0;32mI (131412) example: RMP_CONV: 0[0m
+[0;32mI (132412) example: Pulse count: 190394[0m
+[0;32mI (132412) example: Pulses per second: 0[0m
+[0;32mI (132412) example: RPM: 0[0m
+[0;32mI (132412) example: RMP_CONV: 0[0m
+[0;32mI (133412) example: Pulse count: 190394[0m
+[0;32mI (133412) example: Pulses per second: 0[0m
+[0;32mI (133412) example: RPM: 0[0m
+[0;32mI (133412) example: RMP_CONV: 0[0m
+[0;32mI (134412) example: Pulse count: 190394[0m
+[0;32mI (134412) example: Pulses per second: 0[0m
+[0;32mI (134412) example: RPM: 0[0m
+[0;32mI (134412) example: RMP_CONV: 0[0m
+[0;32mI (135412) example: Pulse count: 190394[0m
+[0;32mI (135412) example: Pulses per second: 0[0m
+[0;32mI (135412) example: RPM: 0[0m
+[0;32mI (135412) example: RMP_CONV: 0[0m
+[0;32mI (136412) example: Pulse count: 190394[0m
+[0;32mI (136412) example: Pulses per second: 0[0m
+[0;32mI (136412) example: RPM: 0[0m
+[0;32mI (136412) example: RMP_CONV: 0[0m
+[0;32mI (137412) example: Pulse count: 190394[0m
+[0;32mI (137412) example: Pulses per second: 0[0m
+[0;32mI (137412) example: RPM: 0[0m
+[0;32mI (137412) example: RMP_CONV: 0[0m
+[0;32mI (138412) example: Pulse count: 190394[0m
+[0;32mI (138412) example: Pulses per second: 0[0m
+[0;32mI (138412) example: RPM: 0[0m
+[0;32mI (138412) example: RMP_CONV: 0[0m
+[0;32mI (139412) example: Pulse count: 190394[0m
+[0;32mI (139412) example: Pulses per second: 0[0m
+[0;32mI (139412) example: RPM: 0[0m
+[0;32mI (139412) example: RMP_CONV: 0[0m
+[0;32mI (140412) example: Pulse count: 190394[0m
+[0;32mI (140412) example: Pulses per second: 0[0m
+[0;32mI (140412) example: RPM: 0[0m
+[0;32mI (140412) example: RMP_CONV: 0[0m
+[0;32mI (141412) example: Pulse count: 190394[0m
+[0;32mI (141412) example: Pulses per second: 0[0m
+[0;32mI (141412) example: RPM: 0[0m
+[0;32mI (141412) example: RMP_CONV: 0[0m
+[0;32mI (142412) example: Pulse count: 190394[0m
+[0;32mI (142412) example: Pulses per second: 0[0m
+[0;32mI (142412) example: RPM: 0[0m
+[0;32mI (142412) example: RMP_CONV: 0[0m
+[0;32mI (143412) example: Pulse count: 190394[0m
+[0;32mI (143412) example: Pulses per second: 0[0m
+[0;32mI (143412) example: RPM: 0[0m
+[0;32mI (143412) example: RMP_CONV: 0[0m
+[0;32mI (144412) example: Pulse count: 190394[0m
+[0;32mI (144412) example: Pulses per second: 0[0m
+[0;32mI (144412) example: RPM: 0[0m
+[0;32mI (144412) example: RMP_CONV: 0[0m
+[0;32mI (145412) example: Pulse count: 190394[0m
+[0;32mI (145412) example: Pulses per second: 0[0m
+[0;32mI (145412) example: RPM: 0[0m
+[0;32mI (145412) example: RMP_CONV: 0[0m
+[0;32mI (146412) example: Pulse count: 190394[0m
+[0;32mI (146412) example: Pulses per second: 0[0m
+[0;32mI (146412) example: RPM: 0[0m
+[0;32mI (146412) example: RMP_CONV: 0[0m
+[0;32mI (147412) example: Pulse count: 190394[0m
+[0;32mI (147412) example: Pulses per second: 0[0m
+[0;32mI (147412) example: RPM: 0[0m
+[0;32mI (147412) example: RMP_CONV: 0[0m
+[0;32mI (148412) example: Pulse count: 190394[0m
+[0;32mI (148412) example: Pulses per second: 0[0m
+[0;32mI (148412) example: RPM: 0[0m
+[0;32mI (148412) example: RMP_CONV: 0[0m
+[0;32mI (149412) example: Pulse count: 190394[0m
+[0;32mI (149412) example: Pulses per second: 0[0m
+[0;32mI (149412) example: RPM: 0[0m
+[0;32mI (149412) example: RMP_CONV: 0[0m
+[0;32mI (150412) example: Pulse count: 190394[0m
+[0;32mI (150412) example: Pulses per second: 0[0m
+[0;32mI (150412) example: RPM: 0[0m
+[0;32mI (150412) example: RMP_CONV: 0[0m
+[0;32mI (151412) example: Pulse count: 190394[0m
+[0;32mI (151412) example: Pulses per second: 0[0m
+[0;32mI (151412) example: RPM: 0[0m
+[0;32mI (151412) example: RMP_CONV: 0[0m
+[0;32mI (152412) example: Pulse count: 190394[0m
+[0;32mI (152412) example: Pulses per second: 0[0m
+[0;32mI (152412) example: RPM: 0[0m
+[0;32mI (152412) example: RMP_CONV: 0[0m
+[0;32mI (153412) example: Pulse count: 190394[0m
+[0;32mI (153412) example: Pulses per second: 0[0m
+[0;32mI (153412) example: RPM: 0[0m
+[0;32mI (153412) example: RMP_CONV: 0[0m
+[0;32mI (154412) example: Pulse count: 190394[0m
+[0;32mI (154412) example: Pulses per second: 0[0m
+[0;32mI (154412) example: RPM: 0[0m
+[0;32mI (154412) example: RMP_CONV: 0[0m
+[0;32mI (155412) example: Pulse count: 190394[0m
+[0;32mI (155412) example: Pulses per second: 0[0m
+[0;32mI (155412) example: RPM: 0[0m
+[0;32mI (155412) example: RMP_CONV: 0[0m
+[0;32mI (156412) example: Pulse count: 190394[0m
+[0;32mI (156412) example: Pulses per second: 0[0m
+[0;32mI (156412) example: RPM: 0[0m
+[0;32mI (156412) example: RMP_CONV: 0[0m
+[0;32mI (157412) example: Pulse count: 190394[0m
+[0;32mI (157412) example: Pulses per second: 0[0m
+[0;32mI (157412) example: RPM: 0[0m
+[0;32mI (157412) example: RMP_CONV: 0[0m
+[0;32mI (158412) example: Pulse count: 190394[0m
+[0;32mI (158412) example: Pulses per second: 0[0m
+[0;32mI (158412) example: RPM: 0[0m
+[0;32mI (158412) example: RMP_CONV: 0[0m
+[0;32mI (159412) example: Pulse count: 190394[0m
+[0;32mI (159412) example: Pulses per second: 0[0m
+[0;32mI (159412) example: RPM: 0[0m
+[0;32mI (159412) example: RMP_CONV: 0[0m
+[0;32mI (160412) example: Pulse count: 190394[0m
+[0;32mI (160412) example: Pulses per second: 0[0m
+[0;32mI (160412) example: RPM: 0[0m
+[0;32mI (160412) example: RMP_CONV: 0[0m
+[0;32mI (161412) example: Pulse count: 190394[0m
+[0;32mI (161412) example: Pulses per second: 0[0m
+[0;32mI (161412) example: RPM: 0[0m
+[0;32mI (161412) example: RMP_CONV: 0[0m
+[0;32mI (162412) example: Pulse count: 190394[0m
+[0;32mI (162412) example: Pulses per second: 0[0m
+[0;32mI (162412) example: RPM: 0[0m
+[0;32mI (162412) example: RMP_CONV: 0[0m
+[0;32mI (163412) example: Pulse count: 190394[0m
+[0;32mI (163412) example: Pulses per second: 0[0m
+[0;32mI (163412) example: RPM: 0[0m
+[0;32mI (163412) example: RMP_CONV: 0[0m
+[0;32mI (164412) example: Pulse count: 190394[0m
+[0;32mI (164412) example: Pulses per second: 0[0m
+[0;32mI (164412) example: RPM: 0[0m
+[0;32mI (164412) example: RMP_CONV: 0[0m
+[0;32mI (165412) example: Pulse count: 190394[0m
+[0;32mI (165412) example: Pulses per second: 0[0m
+[0;32mI (165412) example: RPM: 0[0m
+[0;32mI (165412) example: RMP_CONV: 0[0m
+[0;32mI (166412) example: Pulse count: 190394[0m
+[0;32mI (166412) example: Pulses per second: 0[0m
+[0;32mI (166412) example: RPM: 0[0m
+[0;32mI (166412) example: RMP_CONV: 0[0m
+[0;32mI (167412) example: Pulse count: 190394[0m
+[0;32mI (167412) example: Pulses per second: 0[0m
+[0;32mI (167412) example: RPM: 0[0m
+[0;32mI (167412) example: RMP_CONV: 0[0m
+[0;32mI (168412) example: Pulse count: 190394[0m
+[0;32mI (168412) example: Pulses per second: 0[0m
+[0;32mI (168412) example: RPM: 0[0m
+[0;32mI (168412) example: RMP_CONV: 0[0m
+[0;32mI (169412) example: Pulse count: 190394[0m
+[0;32mI (169412) example: Pulses per second: 0[0m
+[0;32mI (169412) example: RPM: 0[0m
+[0;32mI (169412) example: RMP_CONV: 0[0m
+[0;32mI (170412) example: Pulse count: 190394[0m
+[0;32mI (170412) example: Pulses per second: 0[0m
+[0;32mI (170412) example: RPM: 0[0m
+[0;32mI (170412) example: RMP_CONV: 0[0m
+[0;32mI (171412) example: Pulse count: 190394[0m
+[0;32mI (171412) example: Pulses per second: 0[0m
+[0;32mI (171412) example: RPM: 0[0m
+[0;32mI (171412) example: RMP_CONV: 0[0m
+[0;32mI (172412) example: Pulse count: 190394[0m
+[0;32mI (172412) example: Pulses per second: 0[0m
+[0;32mI (172412) example: RPM: 0[0m
+[0;32mI (172412) example: RMP_CONV: 0[0m
+[0;32mI (173412) example: Pulse count: 190394[0m
+[0;32mI (173412) example: Pulses per second: 0[0m
+[0;32mI (173412) example: RPM: 0[0m
+[0;32mI (173412) example: RMP_CONV: 0[0m
+[0;32mI (174412) example: Pulse count: 190394[0m
+[0;32mI (174412) example: Pulses per second: 0[0m
+[0;32mI (174412) example: RPM: 0[0m
+[0;32mI (174412) example: RMP_CONV: 0[0m
+[0;32mI (175412) example: Pulse count: 190394[0m
+[0;32mI (175412) example: Pulses per second: 0[0m
+[0;32mI (175412) example: RPM: 0[0m
+[0;32mI (175412) example: RMP_CONV: 0[0m
+[0;32mI (176412) example: Pulse count: 190394[0m
+[0;32mI (176412) example: Pulses per second: 0[0m
+[0;32mI (176412) example: RPM: 0[0m
+[0;32mI (176412) example: RMP_CONV: 0[0m
+[0;32mI (177412) example: Pulse count: 190394[0m
+[0;32mI (177412) example: Pulses per second: 0[0m
+[0;32mI (177412) example: RPM: 0[0m
+[0;32mI (177412) example: RMP_CONV: 0[0m
+[0;32mI (178412) example: Pulse count: 190394[0m
+[0;32mI (178412) example: Pulses per second: 0[0m
+[0;32mI (178412) example: RPM: 0[0m
+[0;32mI (178412) example: RMP_CONV: 0[0m
+[0;32mI (179412) example: Pulse count: 190394[0m
+[0;32mI (179412) example: Pulses per second: 0[0m
+[0;32mI (179412) example: RPM: 0[0m
+[0;32mI (179412) example: RMP_CONV: 0[0m
+[0;32mI (180412) example: Pulse count: 190394[0m
+[0;32mI (180412) example: Pulses per second: 0[0m
+[0;32mI (180412) example: RPM: 0[0m
+[0;32mI (180412) example: RMP_CONV: 0[0m
+[0;32mI (181412) example: Pulse count: 190394[0m
+[0;32mI (181412) example: Pulses per second: 0[0m
+[0;32mI (181412) example: RPM: 0[0m
+[0;32mI (181412) example: RMP_CONV: 0[0m
+[0;32mI (182412) example: Pulse count: 190394[0m
+[0;32mI (182412) example: Pulses per second: 0[0m
+[0;32mI (182412) example: RPM: 0[0m
+[0;32mI (182412) example: RMP_CONV: 0[0m
+[0;32mI (183412) example: Pulse count: 190394[0m
+[0;32mI (183412) example: Pulses per second: 0[0m
+[0;32mI (183412) example: RPM: 0[0m
+[0;32mI (183412) example: RMP_CONV: 0[0m
+[0;32mI (184412) example: Pulse count: 190394[0m
+[0;32mI (184412) example: Pulses per second: 0[0m
+[0;32mI (184412) example: RPM: 0[0m
+[0;32mI (184412) example: RMP_CONV: 0[0m
+[0;32mI (185412) example: Pulse count: 190394[0m
+[0;32mI (185412) example: Pulses per second: 0[0m
+[0;32mI (185412) example: RPM: 0[0m
+[0;32mI (185412) example: RMP_CONV: 0[0m
+[0;32mI (186412) example: Pulse count: 190394[0m
+[0;32mI (186412) example: Pulses per second: 0[0m
+[0;32mI (186412) example: RPM: 0[0m
+[0;32mI (186412) example: RMP_CONV: 0[0m
+[0;32mI (187412) example: Pulse count: 190394[0m
+[0;32mI (187412) example: Pulses per second: 0[0m
+[0;32mI (187412) example: RPM: 0[0m
+[0;32mI (187412) example: RMP_CONV: 0[0m
+[0;32mI (188412) example: Pulse count: 190394[0m
+[0;32mI (188412) example: Pulses per second: 0[0m
+[0;32mI (188412) example: RPM: 0[0m
+[0;32mI (188412) example: RMP_CONV: 0[0m
+[0;32mI (189412) example: Pulse count: 190394[0m
+[0;32mI (189412) example: Pulses per second: 0[0m
+[0;32mI (189412) example: RPM: 0[0m
+[0;32mI (189412) example: RMP_CONV: 0[0m
+[0;32mI (190412) example: Pulse count: 190394[0m
+[0;32mI (190412) example: Pulses per second: 0[0m
+[0;32mI (190412) example: RPM: 0[0m
+[0;32mI (190412) example: RMP_CONV: 0[0m
+[0;32mI (191412) example: Pulse count: 190394[0m
+[0;32mI (191412) example: Pulses per second: 0[0m
+[0;32mI (191412) example: RPM: 0[0m
+[0;32mI (191412) example: RMP_CONV: 0[0m
+[0;32mI (192412) example: Pulse count: 190394[0m
+[0;32mI (192412) example: Pulses per second: 0[0m
+[0;32mI (192412) example: RPM: 0[0m
+[0;32mI (192412) example: RMP_CONV: 0[0m
+[0;32mI (193412) example: Pulse count: 190394[0m
+[0;32mI (193412) example: Pulses per second: 0[0m
+[0;32mI (193412) example: RPM: 0[0m
+[0;32mI (193412) example: RMP_CONV: 0[0m
+[0;32mI (194412) example: Pulse count: 190394[0m
+[0;32mI (194412) example: Pulses per second: 0[0m
+[0;32mI (194412) example: RPM: 0[0m
+[0;32mI (194412) example: RMP_CONV: 0[0m
+[0;32mI (195412) example: Pulse count: 190394[0m
+[0;32mI (195412) example: Pulses per second: 0[0m
+[0;32mI (195412) example: RPM: 0[0m
+[0;32mI (195412) example: RMP_CONV: 0[0m
+[0;32mI (196412) example: Pulse count: 190394[0m
+[0;32mI (196412) example: Pulses per second: 0[0m
+[0;32mI (196412) example: RPM: 0[0m
+[0;32mI (196412) example: RMP_CONV: 0[0m
+[0;32mI (197412) example: Pulse count: 190394[0m
+[0;32mI (197412) example: Pulses per second: 0[0m
+[0;32mI (197412) example: RPM: 0[0m
+[0;32mI (197412) example: RMP_CONV: 0[0m
+[0;32mI (198412) example: Pulse count: 190394[0m
+[0;32mI (198412) example: Pulses per second: 0[0m
+[0;32mI (198412) example: RPM: 0[0m
+[0;32mI (198412) example: RMP_CONV: 0[0m
+[0;32mI (199412) example: Pulse count: 190394[0m
+[0;32mI (199412) example: Pulses per second: 0[0m
+[0;32mI (199412) example: RPM: 0[0m
+[0;32mI (199412) example: RMP_CONV: 0[0m
+[0;32mI (200412) example: Pulse count: 190394[0m
+[0;32mI (200412) example: Pulses per second: 0[0m
+[0;32mI (200412) example: RPM: 0[0m
+[0;32mI (200412) example: RMP_CONV: 0[0m
+[0;32mI (201412) example: Pulse count: 190394[0m
+[0;32mI (201412) example: Pulses per second: 0[0m
+[0;32mI (201412) example: RPM: 0[0m
+[0;32mI (201412) example: RMP_CONV: 0[0m
+[0;32mI (202412) example: Pulse count: 190394[0m
+[0;32mI (202412) example: Pulses per second: 0[0m
+[0;32mI (202412) example: RPM: 0[0m
+[0;32mI (202412) example: RMP_CONV: 0[0m
+[0;32mI (203412) example: Pulse count: 190394[0m
+[0;32mI (203412) example: Pulses per second: 0[0m
+[0;32mI (203412) example: RPM: 0[0m
+[0;32mI (203412) example: RMP_CONV: 0[0m
+[0;32mI (204412) example: Pulse count: 190394[0m
+[0;32mI (204412) example: Pulses per second: 0[0m
+[0;32mI (204412) example: RPM: 0[0m
+[0;32mI (204412) example: RMP_CONV: 0[0m
+[0;32mI (205412) example: Pulse count: 190394[0m
+[0;32mI (205412) example: Pulses per second: 0[0m
+[0;32mI (205412) example: RPM: 0[0m
+[0;32mI (205412) example: RMP_CONV: 0[0m
+[0;32mI (206412) example: Pulse count: 190394[0m
+[0;32mI (206412) example: Pulses per second: 0[0m
+[0;32mI (206412) example: RPM: 0[0m
+[0;32mI (206412) example: RMP_CONV: 0[0m
+[0;32mI (207412) example: Pulse count: 190394[0m
+[0;32mI (207412) example: Pulses per second: 0[0m
+[0;32mI (207412) example: RPM: 0[0m
+[0;32mI (207412) example: RMP_CONV: 0[0m
+[0;32mI (208412) example: Pulse count: 190394[0m
+[0;32mI (208412) example: Pulses per second: 0[0m
+[0;32mI (208412) example: RPM: 0[0m
+[0;32mI (208412) example: RMP_CONV: 0[0m
+[0;32mI (209412) example: Pulse count: 190394[0m
+[0;32mI (209412) example: Pulses per second: 0[0m
+[0;32mI (209412) example: RPM: 0[0m
+[0;32mI (209412) example: RMP_CONV: 0[0m
+[0;32mI (210412) example: Pulse count: 190394[0m
+[0;32mI (210412) example: Pulses per second: 0[0m
+[0;32mI (210412) example: RPM: 0[0m
+[0;32mI (210412) example: RMP_CONV: 0[0m
+[0;32mI (211412) example: Pulse count: 190394[0m
+[0;32mI (211412) example: Pulses per second: 0[0m
+[0;32mI (211412) example: RPM: 0[0m
+[0;32mI (211412) example: RMP_CONV: 0[0m
+[0;32mI (212412) example: Pulse count: 190394[0m
+[0;32mI (212412) example: Pulses per second: 0[0m
+[0;32mI (212412) example: RPM: 0[0m
+[0;32mI (212412) example: RMP_CONV: 0[0m
+[0;32mI (213412) example: Pulse count: 190394[0m
+[0;32mI (213412) example: Pulses per second: 0[0m
+[0;32mI (213412) example: RPM: 0[0m
+[0;32mI (213412) example: RMP_CONV: 0[0m
+[0;32mI (214412) example: Pulse count: 190394[0m
+[0;32mI (214412) example: Pulses per second: 0[0m
+[0;32mI (214412) example: RPM: 0[0m
+[0;32mI (214412) example: RMP_CONV: 0[0m
+[0;32mI (215412) example: Pulse count: 190394[0m
+[0;32mI (215412) example: Pulses per second: 0[0m
+[0;32mI (215412) example: RPM: 0[0m
+[0;32mI (215412) example: RMP_CONV: 0[0m
+[0;32mI (216412) example: Pulse count: 190394[0m
+[0;32mI (216412) example: Pulses per second: 0[0m
+[0;32mI (216412) example: RPM: 0[0m
+[0;32mI (216412) example: RMP_CONV: 0[0m
+[0;32mI (217412) example: Pulse count: 190394[0m
+[0;32mI (217412) example: Pulses per second: 0[0m
+[0;32mI (217412) example: RPM: 0[0m
+[0;32mI (217412) example: RMP_CONV: 0[0m
+[0;32mI (218412) example: Pulse count: 190394[0m
+[0;32mI (218412) example: Pulses per second: 0[0m
+[0;32mI (218412) example: RPM: 0[0m
+[0;32mI (218412) example: RMP_CONV: 0[0m
+[0;32mI (219412) example: Pulse count: 190394[0m
+[0;32mI (219412) example: Pulses per second: 0[0m
+[0;32mI (219412) example: RPM: 0[0m
+[0;32mI (219412) example: RMP_CONV: 0[0m
+[0;32mI (220412) example: Pulse count: 190394[0m
+[0;32mI (220412) example: Pulses per second: 0[0m
+[0;32mI (220412) example: RPM: 0[0m
+[0;32mI (220412) example: RMP_CONV: 0[0m
+[0;32mI (221412) example: Pulse count: 190394[0m
+[0;32mI (221412) example: Pulses per second: 0[0m
+[0;32mI (221412) example: RPM: 0[0m
+[0;32mI (221412) example: RMP_CONV: 0[0m
+[0;32mI (222412) example: Pulse count: 190394[0m
+[0;32mI (222412) example: Pulses per second: 0[0m
+[0;32mI (222412) example: RPM: 0[0m
+[0;32mI (222412) example: RMP_CONV: 0[0m
+[0;32mI (223412) example: Pulse count: 190394[0m
+[0;32mI (223412) example: Pulses per second: 0[0m
+[0;32mI (223412) example: RPM: 0[0m
+[0;32mI (223412) example: RMP_CONV: 0[0m
+[0;32mI (224412) example: Pulse count: 190394[0m
+[0;32mI (224412) example: Pulses per second: 0[0m
+[0;32mI (224412) example: RPM: 0[0m
+[0;32mI (224412) example: RMP_CONV: 0[0m
+[0;32mI (225412) example: Pulse count: 190394[0m
+[0;32mI (225412) example: Pulses per second: 0[0m
+[0;32mI (225412) example: RPM: 0[0m
+[0;32mI (225412) example: RMP_CONV: 0[0m
+[0;32mI (226412) example: Pulse count: 190394[0m
+[0;32mI (226412) example: Pulses per second: 0[0m
+[0;32mI (226412) example: RPM: 0[0m
+[0;32mI (226412) example: RMP_CONV: 0[0m
+[0;32mI (227412) example: Pulse count: 190394[0m
+[0;32mI (227412) example: Pulses per second: 0[0m
+[0;32mI (227412) example: RPM: 0[0m
+[0;32mI (227412) example: RMP_CONV: 0[0m
+[0;32mI (228412) example: Pulse count: 190394[0m
+[0;32mI (228412) example: Pulses per second: 0[0m
+[0;32mI (228412) example: RPM: 0[0m
+[0;32mI (228412) example: RMP_CONV: 0[0m
+[0;32mI (229412) example: Pulse count: 190394[0m
+[0;32mI (229412) example: Pulses per second: 0[0m
+[0;32mI (229412) example: RPM: 0[0m
+[0;32mI (229412) example: RMP_CONV: 0[0m
+[0;32mI (230412) example: Pulse count: 190394[0m
+[0;32mI (230412) example: Pulses per second: 0[0m
+[0;32mI (230412) example: RPM: 0[0m
+[0;32mI (230412) example: RMP_CONV: 0[0m
+[0;32mI (231412) example: Pulse count: 190394[0m
+[0;32mI (231412) example: Pulses per second: 0[0m
+[0;32mI (231412) example: RPM: 0[0m
+[0;32mI (231412) example: RMP_CONV: 0[0m
+[0;32mI (232412) example: Pulse count: 190394[0m
+[0;32mI (232412) example: Pulses per second: 0[0m
+[0;32mI (232412) example: RPM: 0[0m
+[0;32mI (232412) example: RMP_CONV: 0[0m
+[0;32mI (233412) example: Pulse count: 190394[0m
+[0;32mI (233412) example: Pulses per second: 0[0m
+[0;32mI (233412) example: RPM: 0[0m
+[0;32mI (233412) example: RMP_CONV: 0[0m
+[0;32mI (234412) example: Pulse count: 190394[0m
+[0;32mI (234412) example: Pulses per second: 0[0m
+[0;32mI (234412) example: RPM: 0[0m
+[0;32mI (234412) example: RMP_CONV: 0[0m
+[0;32mI (235412) example: Pulse count: 190394[0m
+[0;32mI (235412) example: Pulses per second: 0[0m
+[0;32mI (235412) example: RPM: 0[0m
+[0;32mI (235412) example: RMP_CONV: 0[0m
+[0;32mI (236412) example: Pulse count: 190394[0m
+[0;32mI (236412) example: Pulses per second: 0[0m
+[0;32mI (236412) example: RPM: 0[0m
+[0;32mI (236412) example: RMP_CONV: 0[0m
+[0;32mI (237412) example: Pulse count: 190394[0m
+[0;32mI (237412) example: Pulses per second: 0[0m
+[0;32mI (237412) example: RPM: 0[0m
+[0;32mI (237412) example: RMP_CONV: 0[0m
+[0;32mI (238412) example: Pulse count: 190394[0m
+[0;32mI (238412) example: Pulses per second: 0[0m
+[0;32mI (238412) example: RPM: 0[0m
+[0;32mI (238412) example: RMP_CONV: 0[0m
+[0;32mI (239412) example: Pulse count: 190394[0m
+[0;32mI (239412) example: Pulses per second: 0[0m
+[0;32mI (239412) example: RPM: 0[0m
+[0;32mI (239412) example: RMP_CONV: 0[0m
+[0;32mI (240412) example: Pulse count: 190394[0m
+[0;32mI (240412) example: Pulses per second: 0[0m
+[0;32mI (240412) example: RPM: 0[0m
+[0;32mI (240412) example: RMP_CONV: 0[0m
+[0;32mI (241412) example: Pulse count: 190394[0m
+[0;32mI (241412) example: Pulses per second: 0[0m
+[0;32mI (241412) example: RPM: 0[0m
+[0;32mI (241412) example: RMP_CONV: 0[0m
+[0;32mI (242412) example: Pulse count: 190394[0m
+[0;32mI (242412) example: Pulses per second: 0[0m
+[0;32mI (242412) example: RPM: 0[0m
+[0;32mI (242412) example: RMP_CONV: 0[0m
+[0;32mI (243412) example: Pulse count: 190394[0m
+[0;32mI (243412) example: Pulses per second: 0[0m
+[0;32mI (243412) example: RPM: 0[0m
+[0;32mI (243412) example: RMP_CONV: 0[0m
+[0;32mI (244412) example: Pulse count: 190394[0m
+[0;32mI (244412) example: Pulses per second: 0[0m
+[0;32mI (244412) example: RPM: 0[0m
+[0;32mI (244412) example: RMP_CONV: 0[0m
+[0;32mI (245412) example: Pulse count: 190394[0m
+[0;32mI (245412) example: Pulses per second: 0[0m
+[0;32mI (245412) example: RPM: 0[0m
+[0;32mI (245412) example: RMP_CONV: 0[0m
+[0;32mI (246412) example: Pulse count: 190394[0m
+[0;32mI (246412) example: Pulses per second: 0[0m
+[0;32mI (246412) example: RPM: 0[0m
+[0;32mI (246412) example: RMP_CONV: 0[0m
+[0;32mI (247412) example: Pulse count: 190394[0m
+[0;32mI (247412) example: Pulses per second: 0[0m
+[0;32mI (247412) example: RPM: 0[0m
+[0;32mI (247412) example: RMP_CONV: 0[0m
+[0;32mI (248412) example: Pulse count: 190394[0m
+[0;32mI (248412) example: Pulses per second: 0[0m
+[0;32mI (248412) example: RPM: 0[0m
+[0;32mI (248412) example: RMP_CONV: 0[0m
+[0;32mI (249412) example: Pulse count: 190394[0m
+[0;32mI (249412) example: Pulses per second: 0[0m
+[0;32mI (249412) example: RPM: 0[0m
+[0;32mI (249412) example: RMP_CONV: 0[0m
+[0;32mI (250412) example: Pulse count: 190394[0m
+[0;32mI (250412) example: Pulses per second: 0[0m
+[0;32mI (250412) example: RPM: 0[0m
+[0;32mI (250412) example: RMP_CONV: 0[0m
+[0;32mI (251412) example: Pulse count: 190394[0m
+[0;32mI (251412) example: Pulses per second: 0[0m
+[0;32mI (251412) example: RPM: 0[0m
+[0;32mI (251412) example: RMP_CONV: 0[0m
+[0;32mI (252412) example: Pulse count: 190394[0m
+[0;32mI (252412) example: Pulses per second: 0[0m
+[0;32mI (252412) example: RPM: 0[0m
+[0;32mI (252412) example: RMP_CONV: 0[0m
+[0;32mI (253412) example: Pulse count: 190394[0m
+[0;32mI (253412) example: Pulses per second: 0[0m
+[0;32mI (253412) example: RPM: 0[0m
+[0;32mI (253412) example: RMP_CONV: 0[0m
+[0;32mI (254412) example: Pulse count: 190394[0m
+[0;32mI (254412) example: Pulses per second: 0[0m
+[0;32mI (254412) example: RPM: 0[0m
+[0;32mI (254412) example: RMP_CONV: 0[0m
+[0;32mI (255412) example: Pulse count: 190394[0m
+[0;32mI (255412) example: Pulses per second: 0[0m
+[0;32mI (255412) example: RPM: 0[0m
+[0;32mI (255412) example: RMP_CONV: 0[0m
+[0;32mI (256412) example: Pulse count: 190394[0m
+[0;32mI (256412) example: Pulses per second: 0[0m
+[0;32mI (256412) example: RPM: 0[0m
+[0;32mI (256412) example: RMP_CONV: 0[0m
+[0;32mI (257412) example: Pulse count: 190394[0m
+[0;32mI (257412) example: Pulses per second: 0[0m
+[0;32mI (257412) example: RPM: 0[0m
+[0;32mI (257412) example: RMP_CONV: 0[0m
+[0;32mI (258412) example: Pulse count: 190394[0m
+[0;32mI (258412) example: Pulses per second: 0[0m
+[0;32mI (258412) example: RPM: 0[0m
+[0;32mI (258412) example: RMP_CONV: 0[0m
+[0;32mI (259412) example: Pulse count: 190394[0m
+[0;32mI (259412) example: Pulses per second: 0[0m
+[0;32mI (259412) example: RPM: 0[0m
+[0;32mI (259412) example: RMP_CONV: 0[0m
+[0;32mI (260412) example: Pulse count: 190394[0m
+[0;32mI (260412) example: Pulses per second: 0[0m
+[0;32mI (260412) example: RPM: 0[0m
+[0;32mI (260412) example: RMP_CONV: 0[0m
+[0;32mI (261412) example: Pulse count: 190394[0m
+[0;32mI (261412) example: Pulses per second: 0[0m
+[0;32mI (261412) example: RPM: 0[0m
+[0;32mI (261412) example: RMP_CONV: 0[0m
+[0;32mI (262412) example: Pulse count: 190394[0m
+[0;32mI (262412) example: Pulses per second: 0[0m
+[0;32mI (262412) example: RPM: 0[0m
+[0;32mI (262412) example: RMP_CONV: 0[0m
+[0;32mI (263412) example: Pulse count: 190394[0m
+[0;32mI (263412) example: Pulses per second: 0[0m
+[0;32mI (263412) example: RPM: 0[0m
+[0;32mI (263412) example: RMP_CONV: 0[0m
+[0;32mI (264412) example: Pulse count: 190394[0m
+[0;32mI (264412) example: Pulses per second: 0[0m
+[0;32mI (264412) example: RPM: 0[0m
+[0;32mI (264412) example: RMP_CONV: 0[0m
+[0;32mI (265412) example: Pulse count: 190394[0m
+[0;32mI (265412) example: Pulses per second: 0[0m
+[0;32mI (265412) example: RPM: 0[0m
+[0;32mI (265412) example: RMP_CONV: 0[0m
+[0;32mI (266412) example: Pulse count: 190394[0m
+[0;32mI (266412) example: Pulses per second: 0[0m
+[0;32mI (266412) example: RPM: 0[0m
+[0;32mI (266412) example: RMP_CONV: 0[0m
+[0;32mI (267412) example: Pulse count: 190394[0m
+[0;32mI (267412) example: Pulses per second: 0[0m
+[0;32mI (267412) example: RPM: 0[0m
+[0;32mI (267412) example: RMP_CONV: 0[0m
+[0;32mI (268412) example: Pulse count: 190394[0m
+[0;32mI (268412) example: Pulses per second: 0[0m
+[0;32mI (268412) example: RPM: 0[0m
+[0;32mI (268412) example: RMP_CONV: 0[0m
+[0;32mI (269412) example: Pulse count: 190394[0m
+[0;32mI (269412) example: Pulses per second: 0[0m
+[0;32mI (269412) example: RPM: 0[0m
+[0;32mI (269412) example: RMP_CONV: 0[0m
+[0;32mI (270412) example: Pulse count: 190394[0m
+[0;32mI (270412) example: Pulses per second: 0[0m
+[0;32mI (270412) example: RPM: 0[0m
+[0;32mI (270412) example: RMP_CONV: 0[0m
+[0;32mI (271412) example: Pulse count: 190394[0m
+[0;32mI (271412) example: Pulses per second: 0[0m
+[0;32mI (271412) example: RPM: 0[0m
+[0;32mI (271412) example: RMP_CONV: 0[0m
+[0;32mI (272412) example: Pulse count: 190394[0m
+[0;32mI (272412) example: Pulses per second: 0[0m
+[0;32mI (272412) example: RPM: 0[0m
+[0;32mI (272412) example: RMP_CONV: 0[0m
+[0;32mI (273412) example: Pulse count: 190394[0m
+[0;32mI (273412) example: Pulses per second: 0[0m
+[0;32mI (273412) example: RPM: 0[0m
+[0;32mI (273412) example: RMP_CONV: 0[0m
+[0;32mI (274412) example: Pulse count: 190394[0m
+[0;32mI (274412) example: Pulses per second: 0[0m
+[0;32mI (274412) example: RPM: 0[0m
+[0;32mI (274412) example: RMP_CONV: 0[0m
+[0;32mI (275412) example: Pulse count: 190394[0m
+[0;32mI (275412) example: Pulses per second: 0[0m
+[0;32mI (275412) example: RPM: 0[0m
+[0;32mI (275412) example: RMP_CONV: 0[0m
+[0;32mI (276412) example: Pulse count: 190394[0m
+[0;32mI (276412) example: Pulses per second: 0[0m
+[0;32mI (276412) example: RPM: 0[0m
+[0;32mI (276412) example: RMP_CONV: 0[0m
+[0;32mI (277412) example: Pulse count: 190394[0m
+[0;32mI (277412) example: Pulses per second: 0[0m
+[0;32mI (277412) example: RPM: 0[0m
+[0;32mI (277412) example: RMP_CONV: 0[0m
+[0;32mI (278412) example: Pulse count: 190394[0m
+[0;32mI (278412) example: Pulses per second: 0[0m
+[0;32mI (278412) example: RPM: 0[0m
+[0;32mI (278412) example: RMP_CONV: 0[0m
+[0;32mI (279412) example: Pulse count: 190394[0m
+[0;32mI (279412) example: Pulses per second: 0[0m
+[0;32mI (279412) example: RPM: 0[0m
+[0;32mI (279412) example: RMP_CONV: 0[0m
+[0;32mI (280412) example: Pulse count: 190394[0m
+[0;32mI (280412) example: Pulses per second: 0[0m
+[0;32mI (280412) example: RPM: 0[0m
+[0;32mI (280412) example: RMP_CONV: 0[0m
+[0;32mI (281412) example: Pulse count: 190394[0m
+[0;32mI (281412) example: Pulses per second: 0[0m
+[0;32mI (281412) example: RPM: 0[0m
+[0;32mI (281412) example: RMP_CONV: 0[0m
+[0;32mI (282412) example: Pulse count: 190394[0m
+[0;32mI (282412) example: Pulses per second: 0[0m
+[0;32mI (282412) example: RPM: 0[0m
+[0;32mI (282412) example: RMP_CONV: 0[0m
+[0;32mI (283412) example: Pulse count: 190394[0m
+[0;32mI (283412) example: Pulses per second: 0[0m
+[0;32mI (283412) example: RPM: 0[0m
+[0;32mI (283412) example: RMP_CONV: 0[0m
+[0;32mI (284412) example: Pulse count: 190394[0m
+[0;32mI (284412) example: Pulses per second: 0[0m
+[0;32mI (284412) example: RPM: 0[0m
+[0;32mI (284412) example: RMP_CONV: 0[0m
+[0;32mI (285412) example: Pulse count: 190394[0m
+[0;32mI (285412) example: Pulses per second: 0[0m
+[0;32mI (285412) example: RPM: 0[0m
+[0;32mI (285412) example: RMP_CONV: 0[0m
+[0;32mI (286412) example: Pulse count: 190394[0m
+[0;32mI (286412) example: Pulses per second: 0[0m
+[0;32mI (286412) example: RPM: 0[0m
+[0;32mI (286412) example: RMP_CONV: 0[0m
+[0;32mI (287412) example: Pulse count: 190394[0m
+[0;32mI (287412) example: Pulses per second: 0[0m
+[0;32mI (287412) example: RPM: 0[0m
+[0;32mI (287412) example: RMP_CONV: 0[0m
+[0;32mI (288412) example: Pulse count: 190394[0m
+[0;32mI (288412) example: Pulses per second: 0[0m
+[0;32mI (288412) example: RPM: 0[0m
+[0;32mI (288412) example: RMP_CONV: 0[0m
+[0;32mI (289412) example: Pulse count: 190394[0m
+[0;32mI (289412) example: Pulses per second: 0[0m
+[0;32mI (289412) example: RPM: 0[0m
+[0;32mI (289412) example: RMP_CONV: 0[0m
+[0;32mI (290412) example: Pulse count: 190394[0m
+[0;32mI (290412) example: Pulses per second: 0[0m
+[0;32mI (290412) example: RPM: 0[0m
+[0;32mI (290412) example: RMP_CONV: 0[0m
+[0;32mI (291412) example: Pulse count: 190394[0m
+[0;32mI (291412) example: Pulses per second: 0[0m
+[0;32mI (291412) example: RPM: 0[0m
+[0;32mI (291412) example: RMP_CONV: 0[0m
+[0;32mI (292412) example: Pulse count: 190394[0m
+[0;32mI (292412) example: Pulses per second: 0[0m
+[0;32mI (292412) example: RPM: 0[0m
+[0;32mI (292412) example: RMP_CONV: 0[0m
+[0;32mI (293412) example: Pulse count: 190394[0m
+[0;32mI (293412) example: Pulses per second: 0[0m
+[0;32mI (293412) example: RPM: 0[0m
+[0;32mI (293412) example: RMP_CONV: 0[0m
+[0;32mI (294412) example: Pulse count: 190394[0m
+[0;32mI (294412) example: Pulses per second: 0[0m
+[0;32mI (294412) example: RPM: 0[0m
+[0;32mI (294412) example: RMP_CONV: 0[0m
+[0;32mI (295412) example: Pulse count: 190394[0m
+[0;32mI (295412) example: Pulses per second: 0[0m
+[0;32mI (295412) example: RPM: 0[0m
+[0;32mI (295412) example: RMP_CONV: 0[0m
+[0;32mI (296412) example: Pulse count: 190394[0m
+[0;32mI (296412) example: Pulses per second: 0[0m
+[0;32mI (296412) example: RPM: 0[0m
+[0;32mI (296412) example: RMP_CONV: 0[0m
+[0;32mI (297412) example: Pulse count: 190394[0m
+[0;32mI (297412) example: Pulses per second: 0[0m
+[0;32mI (297412) example: RPM: 0[0m
+[0;32mI (297412) example: RMP_CONV: 0[0m
+[0;32mI (298412) example: Pulse count: 190394[0m
+[0;32mI (298412) example: Pulses per second: 0[0m
+[0;32mI (298412) example: RPM: 0[0m
+[0;32mI (298412) example: RMP_CONV: 0[0m
+[0;32mI (299412) example: Pulse count: 190394[0m
+[0;32mI (299412) example: Pulses per second: 0[0m
+[0;32mI (299412) example: RPM: 0[0m
+[0;32mI (299412) example: RMP_CONV: 0[0m
+[0;32mI (300412) example: Pulse count: 190394[0m
+[0;32mI (300412) example: Pulses per second: 0[0m
+[0;32mI (300412) example: RPM: 0[0m
+[0;32mI (300412) example: RMP_CONV: 0[0m
+[0;32mI (301412) example: Pulse count: 190394[0m
+[0;32mI (301412) example: Pulses per second: 0[0m
+[0;32mI (301412) example: RPM: 0[0m
+[0;32mI (301412) example: RMP_CONV: 0[0m
+[0;32mI (302412) example: Pulse count: 190394[0m
+[0;32mI (302412) example: Pulses per second: 0[0m
+[0;32mI (302412) example: RPM: 0[0m
+[0;32mI (302412) example: RMP_CONV: 0[0m
+[0;32mI (303412) example: Pulse count: 190394[0m
+[0;32mI (303412) example: Pulses per second: 0[0m
+[0;32mI (303412) example: RPM: 0[0m
+[0;32mI (303412) example: RMP_CONV: 0[0m
+[0;32mI (304412) example: Pulse count: 190394[0m
+[0;32mI (304412) example: Pulses per second: 0[0m
+[0;32mI (304412) example: RPM: 0[0m
+[0;32mI (304412) example: RMP_CONV: 0[0m
+[0;32mI (305412) example: Pulse count: 190394[0m
+[0;32mI (305412) example: Pulses per second: 0[0m
+[0;32mI (305412) example: RPM: 0[0m
+[0;32mI (305412) example: RMP_CONV: 0[0m
+[0;32mI (306412) example: Pulse count: 190394[0m
+[0;32mI (306412) example: Pulses per second: 0[0m
+[0;32mI (306412) example: RPM: 0[0m
+[0;32mI (306412) example: RMP_CONV: 0[0m
+[0;32mI (307412) example: Pulse count: 190394[0m
+[0;32mI (307412) example: Pulses per second: 0[0m
+[0;32mI (307412) example: RPM: 0[0m
+[0;32mI (307412) example: RMP_CONV: 0[0m
+[0;32mI (308412) example: Pulse count: 190394[0m
+[0;32mI (308412) example: Pulses per second: 0[0m
+[0;32mI (308412) example: RPM: 0[0m
+[0;32mI (308412) example: RMP_CONV: 0[0m
+[0;32mI (309412) example: Pulse count: 190394[0m
+[0;32mI (309412) example: Pulses per second: 0[0m
+[0;32mI (309412) example: RPM: 0[0m
+[0;32mI (309412) example: RMP_CONV: 0[0m
+[0;32mI (310412) example: Pulse count: 190394[0m
+[0;32mI (310412) example: Pulses per second: 0[0m
+[0;32mI (310412) example: RPM: 0[0m
+[0;32mI (310412) example: RMP_CONV: 0[0m
+[0;32mI (311412) example: Pulse count: 190394[0m
+[0;32mI (311412) example: Pulses per second: 0[0m
+[0;32mI (311412) example: RPM: 0[0m
+[0;32mI (311412) example: RMP_CONV: 0[0m
+[0;32mI (312412) example: Pulse count: 190394[0m
+[0;32mI (312412) example: Pulses per second: 0[0m
+[0;32mI (312412) example: RPM: 0[0m
+[0;32mI (312412) example: RMP_CONV: 0[0m
+[0;32mI (313412) example: Pulse count: 190394[0m
+[0;32mI (313412) example: Pulses per second: 0[0m
+[0;32mI (313412) example: RPM: 0[0m
+[0;32mI (313412) example: RMP_CONV: 0[0m
+[0;32mI (314412) example: Pulse count: 190394[0m
+[0;32mI (314412) example: Pulses per second: 0[0m
+[0;32mI (314412) example: RPM: 0[0m
+[0;32mI (314412) example: RMP_CONV: 0[0m
+[0;32mI (315412) example: Pulse count: 190394[0m
+[0;32mI (315412) example: Pulses per second: 0[0m
+[0;32mI (315412) example: RPM: 0[0m
+[0;32mI (315412) example: RMP_CONV: 0[0m
+[0;32mI (316412) example: Pulse count: 190394[0m
+[0;32mI (316412) example: Pulses per second: 0[0m
+[0;32mI (316412) example: RPM: 0[0m
+[0;32mI (316412) example: RMP_CONV: 0[0m
+[0;32mI (317412) example: Pulse count: 190394[0m
+[0;32mI (317412) example: Pulses per second: 0[0m
+[0;32mI (317412) example: RPM: 0[0m
+[0;32mI (317412) example: RMP_CONV: 0[0m
+[0;32mI (318412) example: Pulse count: 190394[0m
+[0;32mI (318412) example: Pulses per second: 0[0m
+[0;32mI (318412) example: RPM: 0[0m
+[0;32mI (318412) example: RMP_CONV: 0[0m
+[0;32mI (319412) example: Pulse count: 190394[0m
+[0;32mI (319412) example: Pulses per second: 0[0m
+[0;32mI (319412) example: RPM: 0[0m
+[0;32mI (319412) example: RMP_CONV: 0[0m
+[0;32mI (320412) example: Pulse count: 190394[0m
+[0;32mI (320412) example: Pulses per second: 0[0m
+[0;32mI (320412) example: RPM: 0[0m
+[0;32mI (320412) example: RMP_CONV: 0[0m
+[0;32mI (321412) example: Pulse count: 190394[0m
+[0;32mI (321412) example: Pulses per second: 0[0m
+[0;32mI (321412) example: RPM: 0[0m
+[0;32mI (321412) example: RMP_CONV: 0[0m
+[0;32mI (322412) example: Pulse count: 190394[0m
+[0;32mI (322412) example: Pulses per second: 0[0m
+[0;32mI (322412) example: RPM: 0[0m
+[0;32mI (322412) example: RMP_CONV: 0[0m
+[0;32mI (323412) example: Pulse count: 190394[0m
+[0;32mI (323412) example: Pulses per second: 0[0m
+[0;32mI (323412) example: RPM: 0[0m
+[0;32mI (323412) example: RMP_CONV: 0[0m
+[0;32mI (324412) example: Pulse count: 190394[0m
+[0;32mI (324412) example: Pulses per second: 0[0m
+[0;32mI (324412) example: RPM: 0[0m
+[0;32mI (324412) example: RMP_CONV: 0[0m
+[0;32mI (325412) example: Pulse count: 190394[0m
+[0;32mI (325412) example: Pulses per second: 0[0m
+[0;32mI (325412) example: RPM: 0[0m
+[0;32mI (325412) example: RMP_CONV: 0[0m
+[0;32mI (326412) example: Pulse count: 190394[0m
+[0;32mI (326412) example: Pulses per second: 0[0m
+[0;32mI (326412) example: RPM: 0[0m
+[0;32mI (326412) example: RMP_CONV: 0[0m
+[0;32mI (327412) example: Pulse count: 190394[0m
+[0;32mI (327412) example: Pulses per second: 0[0m
+[0;32mI (327412) example: RPM: 0[0m
+[0;32mI (327412) example: RMP_CONV: 0[0m

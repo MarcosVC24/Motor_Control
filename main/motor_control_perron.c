@@ -7,17 +7,28 @@
 #include "esp_log.h"
 #include "driver/pulse_cnt.h"
 #include "driver/gpio.h"
+#include "driver/ledc.h"
+#include "esp_err.h"
 #include "esp_sleep.h"
 
 static const char *TAG = "example";
 
-#define PCNT_HIGH_LIMIT 10000
-#define PCNT_LOW_LIMIT  -10000
+// Definir parámetros del PWM
+#define PWM_TIMER              LEDC_TIMER_0
+#define PWM_MODE               LEDC_LOW_SPEED_MODE
+#define PWM_OUTPUT_IO          (18) // Pin de salida
+#define LEDC_CHANNEL           LEDC_CHANNEL_0
+#define PWM_DUTY_RES           LEDC_TIMER_12_BIT // Resolución de 12 bits
+#define PWM_FREQUENCY          (5000) // Frecuencia en Hertz
+
+// Definir parametros del contador de pulsos
+#define PCNT_HIGH_LIMIT 16000
+#define PCNT_LOW_LIMIT  -16000
 
 #define PHASE_A_GPIO 4
 #define PHASE_B_GPIO 5
 
-static bool example_pcnt_on_reach(pcnt_unit_handle_t unit, const pcnt_watch_event_data_t *edata, void *user_ctx)
+/* static bool example_pcnt_on_reach(pcnt_unit_handle_t unit, const pcnt_watch_event_data_t *edata, void *user_ctx)
 {
     BaseType_t high_task_wakeup;
     QueueHandle_t queue = (QueueHandle_t)user_ctx;
@@ -27,9 +38,6 @@ static bool example_pcnt_on_reach(pcnt_unit_handle_t unit, const pcnt_watch_even
 }
 
 static void vPcntTask(void *pvParameters){
-    /* UBaseType_t stackHighWaterMark = uxTaskGetStackHighWaterMark(NULL);
-    ESP_LOGI(TAG, "Stack High Water Mark: %lu palabras", stackHighWaterMark); */
-
     ESP_LOGI(TAG, "install pcnt unit");
     pcnt_unit_config_t unit_config = {
         .high_limit = PCNT_HIGH_LIMIT,
@@ -64,11 +72,6 @@ static void vPcntTask(void *pvParameters){
     ESP_ERROR_CHECK(pcnt_channel_set_edge_action(pcnt_chan_b, PCNT_CHANNEL_EDGE_ACTION_INCREASE, PCNT_CHANNEL_EDGE_ACTION_DECREASE));
     ESP_ERROR_CHECK(pcnt_channel_set_level_action(pcnt_chan_b, PCNT_CHANNEL_LEVEL_ACTION_KEEP, PCNT_CHANNEL_LEVEL_ACTION_INVERSE));
 
-/*     ESP_LOGI(TAG, "add watch points and register callbacks");
-    int watch_points[] = {PCNT_LOW_LIMIT, -1000, 0, 1000, PCNT_HIGH_LIMIT};
-    for (size_t i = 0; i < sizeof(watch_points) / sizeof(watch_points[0]); i++) {
-        ESP_ERROR_CHECK(pcnt_unit_add_watch_point(pcnt_unit, watch_points[i]));
-    } */
     pcnt_event_callbacks_t cbs = {
         .on_reach = example_pcnt_on_reach,
     };
@@ -94,27 +97,55 @@ static void vPcntTask(void *pvParameters){
         } else {
             ESP_ERROR_CHECK(pcnt_unit_get_count(pcnt_unit, &pulse_count));
             contador = contador + pulse_count;
-            int rpm = (pulse_count/112) * 60; // 28 es el número de polos que tiene el imán codificado que tiene el encoder y 4 son los pulsos que se cuentan cada que un polo del iman pasa por el sensor, entonces 28*4 = 112
+            int rpm = (pulse_count/28) * 60; // 28 es el número de polos que tiene el imán codificado que tiene el encoder
+            int rpmConv = rpm / 380;
             ESP_LOGI(TAG, "Pulse count: %d", contador);
             ESP_LOGI(TAG, "Pulses per second: %d", pulse_count);
-            ESP_LOGI(TAG, "RMP: %d", rpm);
+            ESP_LOGI(TAG, "RPM: %d", rpm);
+            ESP_LOGI(TAG, "RMP_CONV: %d", rpmConv);
             ESP_ERROR_CHECK(pcnt_unit_clear_count(pcnt_unit));
         }
     }
-}
+} */
 
 void app_main(void)
 {
     ESP_LOGI(TAG, "Se va a iniciar la tarea");
-    BaseType_t chekeoAlabestia;
+    /* BaseType_t chekeoAlabestia;
     TaskHandle_t pcntHandle = NULL;
     chekeoAlabestia = xTaskCreate(vPcntTask, "pcntTask", 3000, NULL, 2, &pcntHandle);
 
     if (chekeoAlabestia == pdPASS){
         ESP_LOGI(TAG, "Se Generó la tarea ALABESTIA");
-    }
+    } */
+    ledc_timer_config_t ledc_timer = {
+        .duty_resolution = PWM_DUTY_RES, // Resolución del PWM
+        .freq_hz = PWM_FREQUENCY,        // Frecuencia del PWM
+        .speed_mode = PWM_MODE,          // Modo de velocidad
+        .timer_num = PWM_TIMER,          // Número del temporizador
+        .clk_cfg = LEDC_AUTO_CLK,         // Configuración del reloj
+    };
+    ledc_timer_config(&ledc_timer);
 
-    while(1){
-        vTaskDelay(1);
+    // Configurar el canal del LEDC
+    ledc_channel_config_t ledc_channel = {
+        .channel    = LEDC_CHANNEL,
+        .duty       = 0,                  // Ciclo de trabajo inicial
+        .gpio_num   = PWM_OUTPUT_IO,     // Número del pin GPIO
+        .speed_mode = PWM_MODE,
+        .hpoint     = 0,
+        .timer_sel  = PWM_TIMER
+    };
+    ledc_channel_config(&ledc_channel);
+
+    // Inicializar la salida del PWM
+    int duty = 3069; // Ciclo de trabajo deseado (12 bits, 0-4095)
+    ledc_set_duty(ledc_channel.speed_mode, ledc_channel.channel, duty);
+    ledc_update_duty(ledc_channel.speed_mode, ledc_channel.channel);
+    ESP_LOGI(TAG, "Ha comenzado el PWM");
+    // Añadir un bucle para cambiar el ciclo de trabajo si es necesario
+    while (1) {
+        // Cambiar el ciclo de trabajo aquí si es necesario
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
