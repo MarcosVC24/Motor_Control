@@ -1,0 +1,433 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004883b: uart_tx_one_char_uart in ROM
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[1;31m--- esp_idf_monitor (1.4.0) - ESP-IDF Monitor tool
+--- based on miniterm from pySerial
+---
+--- Ctrl+]   Exit program
+--- Ctrl+T   Menu escape key, followed by:
+--- Menu keys:
+---    Ctrl+T         Send the menu character itself to remote
+---    Ctrl+]         Send the exit character itself to remote
+---    Ctrl+R         Reset target board via RTS line
+---    Ctrl+F         Build & flash project
+---    Ctrl+A (or A)  Build & flash app only
+---    Ctrl+Y         Toggle output display
+---    Ctrl+L         Toggle saving output into file
+---    Ctrl+I (or I)  Toggle printing timestamps
+---    Ctrl+P         Reset target into bootloader via the DTR/RTS lines
+---    Ctrl+X (or X)  Exit program[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[1;31m--- esp_idf_monitor (1.4.0) - ESP-IDF Monitor tool
+--- based on miniterm from pySerial
+---
+--- Ctrl+]   Exit program
+--- Ctrl+T   Menu escape key, followed by:
+--- Menu keys:
+---    Ctrl+T         Send the menu character itself to remote
+---    Ctrl+]         Send the exit character itself to remote
+---    Ctrl+R         Reset target board via RTS line
+---    Ctrl+F         Build & flash project
+---    Ctrl+A (or A)  Build & flash app only
+---    Ctrl+Y         Toggle output display
+---    Ctrl+L         Toggle saving output into file
+---    Ctrl+I (or I)  Toggle printing timestamps
+---    Ctrl+P         Reset target into bootloader via the DTR/RTS lines
+---    Ctrl+X (or X)  Exit program[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x40379f55: xQueueGenericSend at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x4037a12a: xQueueGiveMutexRecursive at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x403768bf: lock_release_generic at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:190
+0x40376969: _lock_release_recursive at /home/marcos/Esp32/esp-idf/components/newlib/locks.c:202
+0x42008365: uart_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:220
+0x42006eb9: console_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42006a2a: esp_vfs_write at /home/marcos/Esp32/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4200eb36: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200e3a1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200e3fe: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4200ea3d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42012a6f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42012432: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200ebad: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4201a705: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:215
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42009d25: gpio_config at /home/marcos/Esp32/esp-idf/components/driver/gpio/gpio.c:408 (discriminator 1)
+0x4200ae9f: pcnt_new_channel at /home/marcos/Esp32/esp-idf/components/driver/pcnt/pulse_cnt.c:661
+0x42008435: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:53
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+E

@@ -1,0 +1,57 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42008724: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:115
+[0m
+[0;33m0x4200c363: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200c780: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377151: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008721: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:112 (discriminator 1)
+0x42019f6b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200c363: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200c780: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377151: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008721: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:112 (discriminator 1)
+0x42019f6b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200c363: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200c780: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377151: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008721: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:112 (discriminator 1)
+0x42019f6b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200c363: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200c780: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377151: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008721: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:112 (discriminator 1)
+0x42019f6b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200c363: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200c780: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377151: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008721: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:112 (discriminator 1)
+0x42019f6b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200c363: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200c780: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377151: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008721: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:112 (discriminator 1)
+0x42019f6b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200c363: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200c780: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377151: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008721: app_main at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:112 (discriminator 1)
+0x42019f6b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33mRunning /home/marcos/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/marcos/Esp32/esp-idf/tools/idf.py -p /dev/ttyACM0 flash...[0m
+[0;33m0x40378392: esp_cpu_wait_for_intr at /home/marcos/Esp32/esp-idf/components/esp_hw_support/cpu.c:145
+[0m
+[0m

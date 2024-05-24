@@ -1,0 +1,142 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x42001f60: panic_print_char_uart at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:88 (discriminator 1)
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403758c6: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x40379bb5: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403800a9: __assert_func at /home/marcos/Esp32/esp-idf/components/newlib/assert.c:81
+0x4037a436: xQueueSemaphoreTake at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x4037fe68: esp_log_impl_lock_timeout at /home/marcos/Esp32/esp-idf/components/log/log_freertos.c:48
+0x4201a6aa: esp_log_writev at /home/marcos/Esp32/esp-idf/components/log/log.c:207
+0x4037fe1d: esp_log_write at /home/marcos/Esp32/esp-idf/components/log/log.c:225
+0x42008384: vPcntTask at /home/marcos/Esp32/motor_control_perron/main/motor_control_perron.c:30 (discriminator 1)
+0x4037a61d: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037583c: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0m

@@ -1,0 +1,179 @@
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c02002ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378392
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 22 2024 16:25:09[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0dcach ( 56492) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001dcd4 vaddr=3fc92000 size=02344h (  9028) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a940h (108864) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=0003a968 vaddr=3fc94344 size=0058ch (  1420) load[0m
+[0;32mI (152) esp_image: segment 4: paddr=0003aefc vaddr=40374000 size=0dfach ( 57260) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     motor_control_perron[0m
+[0;32mI (208) cpu_start: App version:      1[0m
+[0;32mI (213) cpu_start: Compile time:     May 22 2024 16:24:29[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  9f5ac1ca2...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (229) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (234) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (239) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FC951A8 len 00054568 (337 KiB): RAM[0m
+[0;32mI (257) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (276) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (286) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (291) spi_flash: flash io: opi_str[0m
+[0;33mW (295) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (308) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (315) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) example: install pcnt unit[0m
+[0;32mI (333) example: set glitch filter[0m
+[0;32mI (343) example: install pcnt channels[0m
+[0;32mI (343) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (353) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (363) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (373) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) example: set edge and level actions for pcnt channels[0m
+[0;32mI (383) example: add watch points and register callbacks[0m
+[0;32mI (393) example: enable pcnt unit[0m
+[0;32mI (393) example: clear pcnt unit[0m
+[0;32mI (403) example: start pcnt unit[0m
+[0;32mI (1403) example: Pulse count: 0[0m
+[0;32mI (1403) example: RMP: 0[0m
+[0;32mI (2403) example: Pulse count: 0[0m
+[0;32mI (2403) example: RMP: 0[0m
+[0;32mI (3403) example: Pulse count: 0[0m
+[0;32mI (3403) example: RMP: 0[0m
+[0;32mI (4403) example: Pulse count: 0[0m
+[0;32mI (4403) example: RMP: 0[0m
+[0;32mI (5403) example: Pulse count: 0[0m
+[0;32mI (5403) example: RMP: 0[0m
+[0;32mI (6003) example: Watch point event, count: -50[0m
+[0;32mI (7003) example: Pulse count: -50[0m
+[0;32mI (7003) example: RMP: -3000[0m
+[0;32mI (8003) example: Pulse count: -50[0m
+[0;32mI (8003) example: RMP: 0[0m
+[0;32mI (9003) example: Pulse count: -50[0m
+[0;32mI (9003) example: RMP: 0[0m
+[0;32mI (9773) example: Watch point event, count: 0[0m
+[0;32mI (10773) example: Pulse count: -58[0m
+[0;32mI (10773) example: RMP: -480[0m
+[0;32mI (11773) example: Pulse count: -65[0m
+[0;32mI (11773) example: RMP: -420[0m
+[0;32mI (12293) example: Watch point event, count: 0[0m
+[0;32mI (13293) example: Pulse count: -65[0m
+[0;32mI (13293) example: RMP: 0[0m
+[0;32mI (14293) example: Pulse count: -65[0m
+[0;32mI (14293) example: RMP: 0[0m
+[0;32mI (15293) example: Pulse count: -65[0m
+[0;32mI (15293) example: RMP: 0[0m
+[0;32mI (16293) example: Pulse count: -70[0m
+[0;32mI (16293) example: RMP: -300[0m
+[0;32mI (17293) example: Pulse count: -75[0m
+[0;32mI (17293) example: RMP: -300[0m
+[0;32mI (18293) example: Pulse count: -81[0m
+[0;32mI (18293) example: RMP: -360[0m
+[0;32mI (19293) example: Pulse count: -86[0m
+[0;32mI (19293) example: RMP: -300[0m
+[0;32mI (20293) example: Pulse count: -86[0m
+[0;32mI (20293) example: RMP: 0[0m
+[0;32mI (21293) example: Pulse count: -86[0m
+[0;32mI (21293) example: RMP: 0[0m
+[0;32mI (22293) example: Pulse count: -86[0m
+[0;32mI (22293) example: RMP: 0[0m
+[0;32mI (23293) example: Pulse count: -87[0m
+[0;32mI (23293) example: RMP: -60[0m
+[0;32mI (24293) example: Pulse count: -73[0m
+[0;32mI (24293) example: RMP: 840[0m
+[0;32mI (25293) example: Pulse count: -73[0m
+[0;32mI (25293) example: RMP: 0[0m
+[0;32mI (26293) example: Pulse count: -73[0m
+[0;32mI (26293) example: RMP: 0[0m
+[0;32mI (27293) example: Pulse count: -73[0m
+[0;32mI (27293) example: RMP: 0[0m
+[0;32mI (28293) example: Pulse count: -63[0m
+[0;32mI (28293) example: RMP: 600[0m
+[0;32mI (29293) example: Pulse count: -62[0m
+[0;32mI (29293) example: RMP: 60[0m
+[0;32mI (30293) example: Pulse count: -61[0m
+[0;32mI (30293) example: RMP: 60[0m
+[0;32mI (31293) example: Pulse count: -71[0m
+[0;32mI (31293) example: RMP: -600[0m
+[0;32mI (32293) example: Pulse count: -72[0m
+[0;32mI (32293) example: RMP: -60[0m
+[0;32mI (33293) example: Pulse count: -70[0m
+[0;32mI (33293) example: RMP: 120[0m
+[0;32mI (34293) example: Pulse count: -51[0m
+[0;32mI (34293) example: RMP: 1140[0m
+[0;32mI (35293) example: Pulse count: -36[0m
+[0;32mI (35293) example: RMP: 900[0m
+[0;32mI (36293) example: Pulse count: -28[0m
+[0;32mI (36293) example: RMP: 480[0m
+[0;32mI (37293) example: Pulse count: -20[0m
+[0;32mI (37293) example: RMP: 480[0m
+[0;32mI (38293) example: Pulse count: -6[0m
+[0;32mI (38293) example: RMP: 840[0m
+[0;32mI (39293) example: Pulse count: 9[0m
+[0;32mI (39293) example: RMP: 900[0m
+[0;32mI (40293) example: Pulse count: 14[0m
+[0;32mI (40293) example: RMP: 300[0m
+[0;32mI (41293) example: Pulse count: 23[0m
+[0;32mI (41293) example: RMP: 540[0m
+[0;32mI (42293) example: Pulse count: 33[0m
+[0;32mI (42293) example: RMP: 600[0m
+[0;32mI (43293) example: Pulse count: 44[0m
+[0;32mI (43293) example: RMP: 660[0m
+[0;32mI (44293) example: Pulse count: 73[0m
+[0;32mI (44293) example: RMP: 1740[0m
+[0;32mI (45293) example: Pulse count: 92[0m
+[0;32mI (45293) example: RMP: 1140[0m
+[0;32mI (45713) example: Watch point event, count: -50[0m
+[0;32mI (46713) example: Pulse count: -93[0m
+[0;32mI (46713) example: RMP: -11100[0m
+[0;32mI (47123) example: Watch point event, count: -50[0m
+[0;32mI (48123) example: Pulse count: -226[0m
+[0;32mI (48123) example: RMP: -7980[0m
+[0;32mI (48633) example: Watch point event, count: -50[0m
+[0;32mI (49633) example: Pulse count: -285[0m
+[0;32mI (49633) example: RMP: -3540[0m
+[0;32mI (50633) example: Pulse count: -287[0m
+[0;32mI (50633) example: RMP: -120[0m
+[0;32mI (51633) example: Pulse count: -295[0m
+[0;32mI (51633) example: RMP: -480[0m
+[0;32mI (52633) example: Pulse count: -294[0m
+[0;32mI (52633) example: RMP: 60[0m
+[0;32mI (53633) example: Pulse count: -294[0m
+[0;32mI (53633) example: RMP: 0[0m
+[0;32mI (54633) example: Pulse count: -294[0m
+[0;32mI (54633) example: RMP: 0[0m

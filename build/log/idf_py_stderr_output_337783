@@ -1,0 +1,476 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40048839: uart_tx_one_char_uart in ROM
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0;33m
+Toggle output display: True, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0;33mRunning /home/marcos/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/marcos/Esp32/esp-idf/tools/idf.py -p /dev/ttyACM0 flash...[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x4037bb42: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad4: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037aaca: _frxt_int_exit at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4037bb45: vTaskSwitchContext at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3630
+0x4037aad7: _frxt_dispatch at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m
+Toggle output display: True, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is f9d17c3bbd709586aa1100360c7d291b81d516f06d6eb48102bded465c344e75[0m
+[0;33m0x4200748b: uart_ll_get_txfifo_len at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/marcos/Esp32/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0m
